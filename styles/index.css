@@ -263,56 +263,285 @@ nav {
     right: 72%;
 }
 
+/* Section-3 style */
+
+.section-3-head {
+    color: #131318;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-3-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding: 0rem 7rem;
+}
+
+.frame-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.frame {
+    border-radius: 0.5rem;
+    border: 0.001rem solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 0.4rem;
+}
+
+.frame h4 {
+    color: #131318;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    padding: 0.5rem 0rem;
+}
+
+.frame p {
+    color: #5A5A5D;
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding: 0.2rem 0rem;
+}
+
+#frame-last {
+    left: 50%;
+    position: relative;
+}
+
+#frame-mid {
+    border-radius: 0.5rem;
+    border: 0.005rem solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.frame-image {
+    width: 10%;
+}
+#last-heading{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Section-4 style */
+.section-4 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 40% 60% repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.pl {
+    width: 100%;
+}
+
+.img-description {
+    border-radius: 0.5rem;
+    background: #FF5400;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+    left: 12rem;
+    width: 30%;
+    transform: rotate(-25.628deg);
+}
+
+.img-description p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #FFF;
+}
+
+.save {
+    margin-top: 0px;
+    color: #FFF;
+    font-size: 0.75rem;
+    padding-top: 0px;
+}
+
+.com {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+
+.subscribe {
+    border: 0.01rem solid #FF5400;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    height: 11.5rem;
+}
+
+.section-4-head {
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.paragraph {
+    color: #5A5A5D;
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.input {
+    padding: 0.5rem 10%;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+.submit {
+    padding: 0.5rem 35%;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border: none;
+}
+
+
+/* Footer-styles */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.hero-img {
+    width: 4%;
+}
+
+#footer-heading {
+    margin-top: 1rem;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding: 0.75rem 5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    padding: 0.5rem;
+    width: 4%;
+}
+
+.copy-right {
+    color: #131318;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
 /* media query */
 @media screen and (max-width: 576px) {
 
     .destination-1,
     .destination-2,
-    .destination-3 {
+    .destination-3,
+    .frame-container,
+    .section-4{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
 
     .drop-down,
-    nav, .tours {
+    nav,
+    .tours {
         flex-direction: column;
     }
 
     .header-description {
-        padding: 0px;     
+        padding: 0px;
     }
+
     nav {
         display: flex;
         justify-content: space-evenly;
         align-items: baseline;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-    
+
     }
+
     #destination-description {
         padding: 0.5rem;
     }
+
     .btn {
         margin: 10px;
         margin-left: 0px;
     }
+
     .description {
         width: 35%;
     }
+
     .drop-down {
         width: 100%;
         margin-left: 0px;
         padding: 3px;
         margin: 5px;
     }
-    .nav-items{
+
+    .nav-items {
         display: none;
     }
-    .hero{
+
+    .hero {
         font-size: .5rem;
     }
+
     .head-img {
         width: 10%;
     }
-    
+    .description{
+        padding: 0rem;
+        width: 100%;
+        margin: 0rem;
+    }
+    #frame-last{
+        left: 0%;
+        position: relative;
+    }
+    .submit {
+        /* padding: 0rem; */
+        padding: 0.5rem 42%;
+    }
+    .input {
+        padding: 0.5rem 29%;
+
+    }
+    .img-description {
+        left: 16rem;
+        bottom: 4.5rem;
+    }
+
 }
